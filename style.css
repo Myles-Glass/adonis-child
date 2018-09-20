@@ -1,0 +1,77 @@
+/*
+Theme Name: Adonis-Child
+Theme URI: http://www.mylesglass.com
+Description: Child theme of Adonis
+Author: Myles Glass
+Author URI: http://www.mylesglass.com
+Template: adonis
+Version 0.1
+*/
+
+/*------------Project Image Container---------------*/
+.projectcontainer {
+	width: 266px;
+	background-color: #f1f1f1;
+	box-shadow: 1px 1px 1px #888;
+}
+
+.projectcontainer .projectimagecontainer {
+ 	position: relative;
+	padding-top: 10px;
+	margin-left: 10px;
+	-webkit-backface-visibility: hidden;  /*these two fix the subtle shaking after transition ends*/
+	-webkit-transform: translateZ(0) scale(1.0, 1.0);
+	
+	margin-bottom: -40px;
+}
+
+.projectcontainer .projectimagecontainer .image {
+	transition: 0.3s;
+	box-shadow: 6px 6px 5px #888;
+}
+
+.projectcontainer .projectimagecontainer:hover .image {
+	-webkit-filter: brightness() blur();
+    filter: brightness(.6);
+	box-shadow: 1px 1px 1px #888;
+	transition: 0.3s;
+}
+
+.projectcontainer .projectimagecontainer .viewtext {
+	position: absolute;
+	transform: translate(-50%, -50%);
+	top: 50%;
+	left: 50%;
+	
+	text-align: center;
+	font-size: 22px;
+    background-color: #2b2b2b;
+    color: white;
+	padding-top: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+	padding-bottom: 6px;
+	opacity: 0;
+	-webkit-backface-visibility: hidden;  /*these two fix the subtle shaking after transition ends*/
+	-webkit-transform: translateZ(50) scale(1.0, 1.0);
+}
+.projectcontainer .projectimagecontainer:hover .viewtext {
+	opacity: 1;
+}
+
+.projectcontainer .titletext {
+	padding: 0px;
+	text-align: center;
+	font-size: 50px;
+	margin-bottom: -30px;
+
+}
+
+.projectcontainer .tooltext {
+	text-align: center;
+	font-size: 30px;
+
+
+}
+
+
